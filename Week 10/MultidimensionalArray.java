@@ -45,14 +45,14 @@ public class MultidimensionalArray {
         //     for (int j = 0; j < alphabet.length; j++) {
         //         System.out.print(alphabet[i][j]);
         //     }
-        //     System.out.println(" ");
+        //     System.out.println();
         // }
 
         for (int i = alphabet.length - 1; i >= 0 ; i--) {
             for (int j = alphabet.length - 1; j >= 0; j--) {
                 System.out.print(alphabet[i][j]);
             }
-            System.out.println(" ");
+            System.out.println();
         }
 
         // --------------------------------------------------------Clock----------------------------------------------------------------
