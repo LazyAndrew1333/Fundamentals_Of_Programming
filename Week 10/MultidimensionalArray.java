@@ -36,7 +36,11 @@ public class MultidimensionalArray {
             {'D', 'E', 'F'},
             {'G', 'H', 'I'},
             {'J', 'K', 'L'},
-            {'M', 'N', 'O'}
+            {'M', 'N', 'O'},
+            {'P', 'Q', 'R'},
+            {'T', 'U', 'V'},
+            {'W', 'X', 'Y'},
+            {'Z', ' ', ' '}
         };
 
         // System.out.println(alphabet[1][1]);
