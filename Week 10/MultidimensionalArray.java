@@ -48,9 +48,20 @@ public class MultidimensionalArray {
         //     System.out.println();
         // }
 
-        for (int i = alphabet.length - 1; i >= 0 ; i--) {
-            for (int j = alphabet.length - 1; j >= 0; j--) {
-                System.out.print(alphabet[i][j]);
+        // for (int i = alphabet.length - 1; i >= 0 ; i--) {
+        //     for (int j = alphabet.length - 1; j >= 0; j--) {
+        //         System.out.print(alphabet[i][j]);
+        //     }
+        //     System.out.println();
+        // }
+
+        for (int i = 0; i < alphabet.length; i++) {
+            for (int j = 0; j < alphabet.length; j++) {
+                if (i == 0 && j == 0 || i == 0 && j == 2 || i == 1 && j == 1 || i == 2 && j == 0 || i == 2 && j == 2){
+                    System.out.print(alphabet[i][j] + " ");
+                }else{
+                    System.out.print(" " + " ");
+                }
             }
             System.out.println();
         }
