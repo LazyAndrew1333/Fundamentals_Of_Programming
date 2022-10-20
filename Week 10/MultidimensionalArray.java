@@ -34,7 +34,9 @@ public class MultidimensionalArray {
         char[][] alphabet =  {
             {'A', 'B', 'C'},
             {'D', 'E', 'F'},
-            {'G', 'H', 'I'}
+            {'G', 'H', 'I'},
+            {'J', 'K', 'L'},
+            {'M', 'N', 'O'}
         };
 
         // System.out.println(alphabet[1][1]);
@@ -55,9 +57,25 @@ public class MultidimensionalArray {
         //     System.out.println();
         // }
 
+        // for (int i = 0; i < alphabet.length; i++) {
+
+        //     for (int j = 0; j < alphabet.length; j++) {
+
+        //         if (i == 0 && j == 0 || i == 0 && j == 2 || i == 1 && j == 1 || i == 2 && j == 0 || i == 2 && j == 2){
+
+        //             System.out.print(alphabet[i][j] + " ");
+        //         }else{
+        //             System.out.print(" " + " ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+        
         for (int i = 0; i < alphabet.length; i++) {
-            for (int j = 0; j < alphabet.length; j++) {
-                if (i == 0 && j == 0 || i == 0 && j == 2 || i == 1 && j == 1 || i == 2 && j == 0 || i == 2 && j == 2){
+
+            for (int j = 0; j < alphabet[i].length; j++) {
+                int k = i + j;
+                if (k % 2 == 0){
                     System.out.print(alphabet[i][j] + " ");
                 }else{
                     System.out.print(" " + " ");
@@ -65,6 +83,12 @@ public class MultidimensionalArray {
             }
             System.out.println();
         }
+
+        // for (int i = 0; i < 4; i++) {
+        //     for (int j = 0; j < 3; j++) {
+        //         System.out.print(alphabet[i][j] + " ");
+        //     }
+        // }
 
         // --------------------------------------------------------Clock----------------------------------------------------------------
         
